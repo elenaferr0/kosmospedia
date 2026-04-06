@@ -1,4 +1,4 @@
-import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
+import { HashRouter, NavLink, Route, Routes } from "react-router-dom";
 import { ExitGamesPage } from "./pages/ExitGamesPage";
 import { AdventureGamesPage } from "./pages/AdventureGamesPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
@@ -13,7 +13,7 @@ const navLinkClassName = ({ isActive }: { isActive: boolean }) =>
 
 export default function App() {
   return (
-    <BrowserRouter>
+  <HashRouter>
       <div className="min-h-screen bg-background text-foreground">
         <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
           <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-4">
@@ -43,6 +43,6 @@ export default function App() {
           </Routes>
         </main>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
