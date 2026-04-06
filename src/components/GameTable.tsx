@@ -256,7 +256,7 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
       <Table>
         <TableHeader>
           <TableRow>
-            <TableHead className="w-20">
+            <TableHead className="w-28">
               <button type="button" onClick={() => toggleSort('image')} className="inline-flex items-center gap-1 font-medium">
                 Image <span className="text-xs text-muted-foreground">{sortIndicator('image')}</span>
               </button>
@@ -310,7 +310,7 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
                     <img
                       src={imageSrc}
                       alt={game.name}
-                      className="h-14 w-14 rounded-md object-cover"
+                      className="h-24 w-24 rounded-md object-cover"
                       loading="lazy"
                     />
                   ) : (
