@@ -37,7 +37,7 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
   const [languageFilter, setLanguageFilter] = useState<'ALL' | string>('ALL');
   const [translationFilter, setTranslationFilter] = useState('');
   const [sortColumn, setSortColumn] = useState<SortColumn>('releaseYear');
-  const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
+  const [sortDirection, setSortDirection] = useState<SortDirection>('asc');
 
   const availableLanguages = useMemo(
     () => Array.from(new Set(games.flatMap((game) => game.languages.map((item) => item.language)))).sort((a, b) => a.localeCompare(b)),
@@ -167,7 +167,7 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
     }
 
     setSortColumn(column);
-    setSortDirection(column === 'releaseYear' ? 'desc' : 'asc');
+    setSortDirection('asc');
   };
 
   const sortIndicator = (column: SortColumn) => {
@@ -193,7 +193,7 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
         </label>
 
         <label>
-          <span className="mb-1 block text-xs font-medium uppercase tracking-wide text-muted-foreground">Release year</span>
+          <span className="mb-1 block text-xs font-medium uppercase tracking-wide text-muted-foreground">Publication date</span>
           <select
             value={releaseYearFilter}
             onChange={(event) => setReleaseYearFilter(event.target.value)}
@@ -276,7 +276,7 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
                 onClick={() => toggleSort('releaseYear')}
                 className="inline-flex items-center gap-1 font-medium"
               >
-                Release year <span className="text-xs text-muted-foreground">{sortIndicator('releaseYear')}</span>
+                Publication date <span className="text-xs text-muted-foreground">{sortIndicator('releaseYear')}</span>
               </button>
             </TableHead>
             <TableHead>
