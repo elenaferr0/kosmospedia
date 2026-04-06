@@ -3,7 +3,7 @@
     "key": "the-secret-of-the-premiere",
     "name": "The Secret of the Premiere",
     "releaseYear": 2016,
-    "difficulty": "UNKNOWN",
+    "difficulty": null,
     "languages": [
       {
         "language": "English",
@@ -23,7 +23,7 @@
     "key": "the-abandoned-cabin",
     "name": "The Abandoned Cabin",
     "releaseYear": 2016,
-    "difficulty": "MEDIUM",
+    "difficulty": "2.5",
     "languages": [
       { "language": "English", "translatedName": "The Abandoned Cabin" },
       { "language": "German", "translatedName": "Die verlassene Hütte" },
@@ -37,7 +37,7 @@
     "key": "the-pharaohs-tomb",
     "name": "The Pharaoh's Tomb",
     "releaseYear": 2016,
-    "difficulty": "MEDIUM",
+    "difficulty": 4,
     "languages": [
       { "language": "English", "translatedName": "The Pharaoh's Tomb" },
       { "language": "German", "translatedName": "Die Grabkammer des Pharao" },
@@ -51,7 +51,7 @@
     "key": "the-secret-lab",
     "name": "The Secret Lab",
     "releaseYear": 2016,
-    "difficulty": "MEDIUM",
+    "difficulty": "3.5",
     "languages": [
       { "language": "English", "translatedName": "The Secret Lab" },
       { "language": "German", "translatedName": "Det Hemmelige Laboratorium" },
@@ -65,7 +65,7 @@
     "key": "the-forgotten-island",
     "name": "The Forgotten Island",
     "releaseYear": 2017,
-    "difficulty": "MEDIUM",
+    "difficulty": 3,
     "languages": [
       { "language": "English", "translatedName": "The Forgotten Island" },
       { "language": "German", "translatedName": "Die vergessene Insel" },
@@ -79,7 +79,7 @@
     "key": "the-forbidden-castle",
     "name": "The Forbidden Castle",
     "releaseYear": 2017,
-    "difficulty": "MEDIUM",
+    "difficulty": 4,
     "languages": [
       { "language": "English", "translatedName": "The Forbidden Castle" },
       { "language": "Italian", "translatedName": "Il Castello Proibito" },
@@ -93,7 +93,7 @@
     "key": "the-polar-station",
     "name": "The Polar Station",
     "releaseYear": 2017,
-    "difficulty": "MEDIUM",
+    "difficulty": 3,
     "languages": [
       { "language": "English", "translatedName": "The Polar Station" },
       { "language": "German", "translatedName": "Die Station im ewigen Eis" },
@@ -107,7 +107,7 @@
     "key": "dead-man-on-the-orient-express",
     "name": "Dead Man on the Orient Express",
     "releaseYear": 2018,
-    "difficulty": "MEDIUM",
+    "difficulty": 4,
     "languages": [
       {
         "language": "English",
@@ -139,7 +139,7 @@
     "key": "the-sinister-mansion",
     "name": "The Sinister Mansion",
     "releaseYear": 2018,
-    "difficulty": "MEDIUM",
+    "difficulty": 3,
     "languages": [
       { "language": "English", "translatedName": "The Sinister Mansion" },
       { "language": "French", "translatedName": "Le Manoir Sinistre" },
@@ -154,7 +154,7 @@
     "key": "the-sunken-treasure",
     "name": "The Sunken Treasure",
     "releaseYear": 2018,
-    "difficulty": "MEDIUM",
+    "difficulty": 2,
     "languages": [
       { "language": "English", "translatedName": "The Sunken Treasure" },
       { "language": "Italian", "translatedName": "Il Tesoro Sommerso" },
@@ -168,7 +168,7 @@
     "key": "the-mysterious-museum",
     "name": "The Mysterious Museum",
     "releaseYear": 2018,
-    "difficulty": "EASY",
+    "difficulty": 2,
     "languages": [
       { "language": "English", "translatedName": "The Mysterious Museum" },
       { "language": "French", "translatedName": "Le Musée Mystérieux" },
@@ -182,7 +182,7 @@
     "key": "kids-code-breaker",
     "name": "Kids: Code Breaker",
     "releaseYear": 2018,
-    "difficulty": "EASY",
+    "difficulty": null,
     "languages": [
       { "language": "German", "translatedName": "Kids: Code Breaker" }
     ]
@@ -191,7 +191,7 @@
     "key": "the-catacombs-of-horror",
     "name": "The Catacombs of Horror",
     "releaseYear": 2019,
-    "difficulty": "HARD",
+    "difficulty": "4.5",
     "languages": [
       {
         "language": "English",
@@ -223,7 +223,7 @@
     "key": "the-haunted-roller-coaster",
     "name": "The Haunted Roller Coaster",
     "releaseYear": 2019,
-    "difficulty": "MEDIUM",
+    "difficulty": 2,
     "languages": [
       {
         "language": "English",
@@ -263,7 +263,7 @@
     "key": "the-house-of-riddles",
     "name": "The House of Riddles",
     "releaseYear": 2019,
-    "difficulty": "MEDIUM",
+    "difficulty": 3,
     "languages": [
       { "language": "English", "translatedName": "The House of Riddles" },
       { "language": "German", "translatedName": "Das Haus der Rätsel" },
@@ -286,7 +286,7 @@
     "key": "theft-on-the-mississippi",
     "name": "Theft on the Mississippi",
     "releaseYear": 2020,
-    "difficulty": "MEDIUM",
+    "difficulty": 3,
     "languages": [
       {
         "language": "English",
@@ -322,7 +322,7 @@
     "key": "the-stormy-flight",
     "name": "The Stormy Flight",
     "releaseYear": 2020,
-    "difficulty": "EASY",
+    "difficulty": 2,
     "languages": [
       { "language": "English", "translatedName": "The Stormy Flight" },
       { "language": "German", "translatedName": "Der Flug ins Ungewisse" },
@@ -334,7 +334,7 @@
     "key": "the-cemetery-of-the-knight",
     "name": "The Cemetery of the Knight",
     "releaseYear": 2020,
-    "difficulty": "MEDIUM",
+    "difficulty": "3.5",
     "languages": [
       {
         "language": "English",
@@ -370,7 +370,7 @@
     "key": "the-enchanted-forest",
     "name": "The Enchanted Forest",
     "releaseYear": 2020,
-    "difficulty": "MEDIUM",
+    "difficulty": 2,
     "languages": [
       { "language": "English", "translatedName": "The Enchanted Forest" },
       { "language": "Dutch", "translatedName": "Het Betoverde Bos" },
@@ -385,7 +385,7 @@
     "key": "the-gate-between-worlds",
     "name": "The Gate Between Worlds",
     "releaseYear": 2021,
-    "difficulty": "MEDIUM",
+    "difficulty": 3,
     "languages": [
       { "language": "English", "translatedName": "The Gate Between Worlds" },
       { "language": "German", "translatedName": "Das Tor zwischen den Welten" },
@@ -403,7 +403,7 @@
     "key": "the-cursed-labyrinth",
     "name": "The Cursed Labyrinth",
     "releaseYear": 2021,
-    "difficulty": "EASY",
+    "difficulty": 2,
     "languages": [
       { "language": "English", "translatedName": "The Cursed Labyrinth" },
       { "language": "German", "translatedName": "Der verfluchte Labyrinth" },
@@ -416,7 +416,7 @@
     "key": "kidnapped-in-fortune-city",
     "name": "Kidnapped in Fortune City",
     "releaseYear": 2021,
-    "difficulty": "MEDIUM",
+    "difficulty": 3,
     "languages": [
       {
         "language": "English",
@@ -452,7 +452,7 @@
     "key": "the-return-to-the-abandoned-cabin",
     "name": "The Return to the Abandoned Cabin",
     "releaseYear": 2022,
-    "difficulty": "MEDIUM",
+    "difficulty": 3,
     "languages": [
       {
         "language": "English",
@@ -484,7 +484,7 @@
     "key": "shadows-over-middle-earth",
     "name": "The Lord of the Rings - Shadows Over Middle-earth",
     "releaseYear": 2022,
-    "difficulty": "HARD",
+    "difficulty": 2,
     "languages": [
       {
         "language": "English",
@@ -520,7 +520,7 @@
     "key": "the-professors-last-riddle",
     "name": "The Professor's Last Riddle",
     "releaseYear": 2023,
-    "difficulty": "MEDIUM",
+    "difficulty": 3,
     "languages": [
       {
         "language": "English",
@@ -544,7 +544,7 @@
     "key": "the-disappearance-of-sherlock-holmes",
     "name": "The Disappearance of Sherlock Holmes",
     "releaseYear": 2023,
-    "difficulty": "MEDIUM",
+    "difficulty": 3,
     "languages": [
       {
         "language": "English",
@@ -572,7 +572,7 @@
     "key": "kids-jungle-of-riddles",
     "name": "Kids: Jungle of Riddles",
     "releaseYear": 2023,
-    "difficulty": "EASY",
+    "difficulty": null,
     "languages": [
       {
         "language": "English",
@@ -584,7 +584,7 @@
     "key": "the-magical-academy",
     "name": "The Magical Academy",
     "releaseYear": 2024,
-    "difficulty": "MEDIUM",
+    "difficulty": 2,
     "languages": [
       { "language": "English", "translatedName": "The Magical Academy" },
       {
@@ -603,7 +603,7 @@
     "key": "the-hunt-through-amsterdam",
     "name": "The Hunt Through Amsterdam",
     "releaseYear": 2024,
-    "difficulty": "MEDIUM",
+    "difficulty": 3,
     "languages": [
       {
         "language": "English",
@@ -627,7 +627,7 @@
     "key": "prison-break",
     "name": "Prison Break",
     "releaseYear": 2024,
-    "difficulty": "HARD",
+    "difficulty": 4,
     "languages": [
       { "language": "English", "translatedName": "Prison Break" },
       {
@@ -642,7 +642,7 @@
     "key": "kids-riddles-in-monsterville",
     "name": "Kids: Riddles in Monsterville",
     "releaseYear": 2024,
-    "difficulty": "EASY",
+    "difficulty": null,
     "languages": [
       {
         "language": "English",
@@ -654,7 +654,7 @@
     "key": "the-venice-conspiracy",
     "name": "The Venice Conspiracy",
     "releaseYear": 2024,
-    "difficulty": "HARD",
+    "difficulty": 3,
     "languages": [
       { "language": "English", "translatedName": "The Venice Conspiracy" },
       { "language": "German", "translatedName": "Die Venedig-Verschwörung" },
@@ -666,7 +666,7 @@
     "key": "family-locked-castle-mission-candyland",
     "name": "Family: Locked Castle / Mission Candyland (2 Adventures)",
     "releaseYear": 2024,
-    "difficulty": "EASY",
+    "difficulty": null,
     "languages": [
       {
         "language": "English",
@@ -678,7 +678,7 @@
     "key": "kids-creepy-puzzle-fun",
     "name": "Kids: Creepy Puzzle Fun",
     "releaseYear": 2024,
-    "difficulty": "EASY",
+    "difficulty": null,
     "languages": [
       {
         "language": "English",

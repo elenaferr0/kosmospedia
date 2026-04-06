@@ -1,4 +1,4 @@
-export type Difficulty = 'EASY' | 'MEDIUM' | 'HARD' | 'EXPERT';
+export type Difficulty = number | null;
 
 export type LocalizedName = {
   language: string;

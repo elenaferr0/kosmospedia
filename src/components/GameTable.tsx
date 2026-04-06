@@ -30,10 +30,43 @@ function getLanguageFlag(language: string) {
   return FLAG_BY_LANGUAGE[language.toLowerCase()] ?? '🏳️';
 }
 
+function normalizeDifficulty(value: unknown): number | null {
+  if (typeof value === 'number' && Number.isFinite(value)) {
+    return value;
+  }
+
+  if (typeof value === 'string') {
+    const normalized = Number.parseFloat(value.trim());
+    return Number.isFinite(normalized) ? normalized : null;
+  }
+
+  return null;
+}
+
+function getDifficultyClassName(difficulty: number | null) {
+  if (difficulty === null) {
+    return 'border-muted bg-muted text-muted-foreground';
+  }
+
+  if (difficulty <= 2.5) {
+    return 'border-green-200 bg-green-100 text-green-800';
+  }
+
+  if (difficulty <= 3.5) {
+    return 'border-blue-200 bg-blue-100 text-blue-800';
+  }
+
+  if (difficulty <= 4.5) {
+    return 'border-orange-200 bg-orange-100 text-orange-800';
+  }
+
+  return 'border-red-200 bg-red-100 text-red-800';
+}
+
 export function GameTable({ games, imageByKey = {} }: GameTableProps) {
   const [nameFilter, setNameFilter] = useState('');
   const [releaseYearFilter, setReleaseYearFilter] = useState<'ALL' | 'UNKNOWN' | string>('ALL');
-  const [difficultyFilter, setDifficultyFilter] = useState<'ALL' | GameItem['difficulty']>('ALL');
+  const [difficultyFilter, setDifficultyFilter] = useState<'ALL' | 'UNKNOWN' | string>('ALL');
   const [languageFilter, setLanguageFilter] = useState<'ALL' | string>('ALL');
   const [translationFilter, setTranslationFilter] = useState('');
   const [sortColumn, setSortColumn] = useState<SortColumn>('releaseYear');
@@ -52,19 +85,17 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
     [games]
   );
 
-  const difficultyClassName: Record<GameItem['difficulty'], string> = {
-    EASY: 'border-green-200 bg-green-100 text-green-800',
-    MEDIUM: 'border-blue-200 bg-blue-100 text-blue-800',
-    HARD: 'border-orange-200 bg-orange-100 text-orange-800',
-    EXPERT: 'border-red-200 bg-red-100 text-red-800',
-  };
-
-  const difficultyRank: Record<GameItem['difficulty'], number> = {
-    EASY: 1,
-    MEDIUM: 2,
-    HARD: 3,
-    EXPERT: 4,
-  };
+  const availableDifficulties = useMemo(
+    () =>
+      Array.from(
+        new Set(
+          games
+            .map((game) => normalizeDifficulty((game as { difficulty: unknown }).difficulty))
+            .filter((difficulty): difficulty is number => difficulty !== null)
+        )
+      ).sort((a, b) => a - b),
+    [games]
+  );
 
   const filteredGames = useMemo(() => {
     const normalizedNameFilter = nameFilter.trim().toLowerCase();
@@ -88,8 +119,16 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
         }
       }
 
-      if (difficultyFilter !== 'ALL' && game.difficulty !== difficultyFilter) {
-        return false;
+      if (difficultyFilter !== 'ALL') {
+        const difficulty = normalizeDifficulty((game as { difficulty: unknown }).difficulty);
+
+        if (difficultyFilter === 'UNKNOWN') {
+          if (difficulty !== null) {
+            return false;
+          }
+        } else if (difficulty?.toString() !== difficultyFilter) {
+          return false;
+        }
       }
 
       if (languageFilter !== 'ALL') {
@@ -142,7 +181,20 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
           break;
         }
         case 'difficulty':
-          comparison = difficultyRank[a.difficulty] - difficultyRank[b.difficulty];
+          {
+            const difficultyA = normalizeDifficulty((a as { difficulty: unknown }).difficulty);
+            const difficultyB = normalizeDifficulty((b as { difficulty: unknown }).difficulty);
+
+            if (difficultyA === null && difficultyB === null) {
+              comparison = 0;
+            } else if (difficultyA === null) {
+              comparison = 1;
+            } else if (difficultyB === null) {
+              comparison = -1;
+            } else {
+              comparison = difficultyA - difficultyB;
+            }
+          }
           break;
         case 'translations': {
           const translationsA = a.languages.map((item) => `${item.language}:${item.translatedName}`).join(' | ');
@@ -158,7 +210,7 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
 
       return sortDirection === 'asc' ? comparison : -comparison;
     });
-  }, [difficultyRank, filteredGames, imageByKey, sortColumn, sortDirection]);
+  }, [filteredGames, imageByKey, sortColumn, sortDirection]);
 
   const toggleSort = (column: SortColumn) => {
     if (column === sortColumn) {
@@ -213,14 +265,16 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
           <span className="mb-1 block text-xs font-medium uppercase tracking-wide text-muted-foreground">Difficulty</span>
           <select
             value={difficultyFilter}
-            onChange={(event) => setDifficultyFilter(event.target.value as 'ALL' | GameItem['difficulty'])}
+            onChange={(event) => setDifficultyFilter(event.target.value)}
             className="h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
           >
             <option value="ALL">All</option>
-            <option value="EASY">EASY</option>
-            <option value="MEDIUM">MEDIUM</option>
-            <option value="HARD">HARD</option>
-            <option value="EXPERT">EXPERT</option>
+            <option value="UNKNOWN">Unknown</option>
+            {availableDifficulties.map((difficulty) => (
+              <option key={difficulty} value={difficulty.toString()}>
+                {difficulty}
+              </option>
+            ))}
           </select>
         </label>
 
@@ -322,9 +376,14 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
                 </TableCell>
                 <TableCell>{game.releaseYear ?? 'Unknown'}</TableCell>
                 <TableCell>
-                  <Badge variant="outline" className={difficultyClassName[game.difficulty]}>
-                    {game.difficulty}
-                  </Badge>
+                  {(() => {
+                    const difficulty = normalizeDifficulty((game as { difficulty: unknown }).difficulty);
+                    return (
+                      <Badge variant="outline" className={getDifficultyClassName(difficulty)}>
+                        {difficulty ?? 'Unknown'}
+                      </Badge>
+                    );
+                  })()}
                 </TableCell>
                 <TableCell>
                   <div className="flex flex-wrap gap-1.5">
