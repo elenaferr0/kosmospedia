@@ -1,0 +1,32 @@
+[
+  {
+    "key": "exit-the-phalara-ruins",
+    "englishName": "Exit: The Phalara Ruins",
+    "releaseYear": 2021,
+    "difficulty": "EASY",
+    "languages": [
+      { "language": "English", "translatedName": "Exit: The Phalara Ruins" },
+      { "language": "German", "translatedName": "EXIT: Der versunkene Schatz" },
+      { "language": "Spanish", "translatedName": "Exit: Las ruinas de Phalara" }
+    ]
+  },
+  {
+    "key": "exit-the-cursed-lab",
+    "englishName": "Exit: The Cursed Lab",
+    "releaseYear": 2019,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "Exit: The Cursed Lab" },
+      { "language": "French", "translatedName": "Exit: Le laboratoire maudit" }
+    ]
+  },
+  {
+    "key": "exit-whispers-under-ice",
+    "englishName": "Exit: Whispers Under Ice",
+    "difficulty": "HARD",
+    "languages": [
+      { "language": "English", "translatedName": "Exit: Whispers Under Ice" },
+      { "language": "Italian", "translatedName": "Exit: Sussurri nel ghiaccio" }
+    ]
+  }
+]

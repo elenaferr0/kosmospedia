@@ -1,0 +1,69 @@
+[
+  {
+    "key": "exit-the-phalara-ruins",
+    "englishName": "Exit: The Phalara Ruins",
+    "category": "exit",
+    "releaseYear": 2021,
+    "difficulty": "EASY",
+    "languages": [
+      { "language": "English", "translatedName": "Exit: The Phalara Ruins" },
+      { "language": "German", "translatedName": "EXIT: Der versunkene Schatz" },
+      { "language": "Spanish", "translatedName": "Exit: Las ruinas de Phalara" }
+    ]
+  },
+  {
+    "key": "exit-the-cursed-lab",
+    "englishName": "Exit: The Cursed Lab",
+    "category": "exit",
+    "releaseYear": 2019,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "Exit: The Cursed Lab" },
+      { "language": "French", "translatedName": "Exit: Le laboratoire maudit" }
+    ]
+  },
+  {
+    "key": "exit-whispers-under-ice",
+    "englishName": "Exit: Whispers Under Ice",
+    "category": "exit",
+    "difficulty": "HARD",
+    "languages": [
+      { "language": "English", "translatedName": "Exit: Whispers Under Ice" },
+      { "language": "Italian", "translatedName": "Exit: Sussurri nel ghiaccio" }
+    ]
+  },
+  {
+    "key": "adventure-echoes-of-atlantis",
+    "englishName": "Adventure: Echoes of Atlantis",
+    "category": "adventure",
+    "releaseYear": 2020,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "Adventure: Echoes of Atlantis" },
+      { "language": "German", "translatedName": "Adventure: Echos von Atlantis" },
+      { "language": "Japanese", "translatedName": "アドベンチャー：アトランティスの残響" }
+    ]
+  },
+  {
+    "key": "adventure-lost-clocktower",
+    "englishName": "Adventure: The Lost Clocktower",
+    "category": "adventure",
+    "releaseYear": 2018,
+    "difficulty": "EASY",
+    "languages": [
+      { "language": "English", "translatedName": "Adventure: The Lost Clocktower" },
+      { "language": "Portuguese", "translatedName": "Aventura: A torre do relógio perdida" }
+    ]
+  },
+  {
+    "key": "adventure-fractured-skies",
+    "englishName": "Adventure: Fractured Skies",
+    "category": "adventure",
+    "difficulty": "EXPERT",
+    "languages": [
+      { "language": "English", "translatedName": "Adventure: Fractured Skies" },
+      { "language": "Polish", "translatedName": "Przygoda: Pęknięte niebo" },
+      { "language": "Turkish", "translatedName": "Macera: Kırık gökyüzü" }
+    ]
+  }
+]

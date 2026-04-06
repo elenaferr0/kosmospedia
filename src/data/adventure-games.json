@@ -1,0 +1,33 @@
+[
+  {
+    "key": "adventure-echoes-of-atlantis",
+    "englishName": "Adventure: Echoes of Atlantis",
+    "releaseYear": 2020,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "Adventure: Echoes of Atlantis" },
+      { "language": "German", "translatedName": "Adventure: Echos von Atlantis" },
+      { "language": "Japanese", "translatedName": "アドベンチャー：アトランティスの残響" }
+    ]
+  },
+  {
+    "key": "adventure-lost-clocktower",
+    "englishName": "Adventure: The Lost Clocktower",
+    "releaseYear": 2018,
+    "difficulty": "EASY",
+    "languages": [
+      { "language": "English", "translatedName": "Adventure: The Lost Clocktower" },
+      { "language": "Portuguese", "translatedName": "Aventura: A torre do relógio perdida" }
+    ]
+  },
+  {
+    "key": "adventure-fractured-skies",
+    "englishName": "Adventure: Fractured Skies",
+    "difficulty": "EXPERT",
+    "languages": [
+      { "language": "English", "translatedName": "Adventure: Fractured Skies" },
+      { "language": "Polish", "translatedName": "Przygoda: Pęknięte niebo" },
+      { "language": "Turkish", "translatedName": "Macera: Kırık gökyüzü" }
+    ]
+  }
+]
