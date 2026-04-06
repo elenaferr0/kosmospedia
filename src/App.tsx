@@ -1,5 +1,4 @@
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
-import { HomePage } from './pages/HomePage';
 import { ExitGamesPage } from './pages/ExitGamesPage';
 import { AdventureGamesPage } from './pages/AdventureGamesPage';
 import { NotFoundPage } from './pages/NotFoundPage';
@@ -19,9 +18,6 @@ export default function App() {
             <p className="text-lg font-semibold">Kosmospedia</p>
             <nav className="flex items-center gap-2">
               <NavLink to="/" end className={navLinkClassName}>
-                Home
-              </NavLink>
-              <NavLink to="/exit-games" className={navLinkClassName}>
                 Exit Games
               </NavLink>
               <NavLink to="/adventure-games" className={navLinkClassName}>
@@ -33,7 +29,7 @@ export default function App() {
 
         <main className="mx-auto w-full max-w-5xl px-4 py-8">
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<ExitGamesPage />} />
             <Route path="/exit-games" element={<ExitGamesPage />} />
             <Route path="/adventure-games" element={<AdventureGamesPage />} />
             <Route path="*" element={<NotFoundPage />} />
