@@ -7,7 +7,7 @@ export type LocalizedName = {
 
 export type GameItem = {
   key: string;
-  englishName: string;
+  germanName: string;
   releaseYear?: number;
   difficulty: Difficulty;
   languages: LocalizedName[];

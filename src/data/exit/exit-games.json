@@ -1,7 +1,7 @@
 [
   {
     "key": "exit-the-phalara-ruins",
-    "englishName": "Exit: The Phalara Ruins",
+    "germanName": "Exit: The Phalara Ruins",
     "releaseYear": 2021,
     "difficulty": "EASY",
     "languages": [
@@ -12,7 +12,7 @@
   },
   {
     "key": "exit-the-cursed-lab",
-    "englishName": "Exit: The Cursed Lab",
+    "germanName": "Exit: The Cursed Lab",
     "releaseYear": 2019,
     "difficulty": "MEDIUM",
     "languages": [
@@ -22,7 +22,7 @@
   },
   {
     "key": "exit-whispers-under-ice",
-    "englishName": "Exit: Whispers Under Ice",
+    "germanName": "Exit: Whispers Under Ice",
     "difficulty": "HARD",
     "languages": [
       { "language": "English", "translatedName": "Exit: Whispers Under Ice" },
