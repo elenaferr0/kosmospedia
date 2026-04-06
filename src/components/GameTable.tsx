@@ -8,10 +8,11 @@ type GameTableProps = {
   imageByKey?: Record<string, string>;
 };
 
-type SortColumn = 'image' | 'name' | 'releaseYear' | 'difficulty' | 'languages' | 'translations';
+type SortColumn = 'image' | 'name' | 'releaseYear' | 'difficulty' | 'translations';
 type SortDirection = 'asc' | 'desc';
 
 const FLAG_BY_LANGUAGE: Record<string, string> = {
+  danish: '🇩🇰',
   dutch : '🇳🇱',
   english: '🇬🇧',
   french: '🇫🇷',
@@ -143,12 +144,6 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
         case 'difficulty':
           comparison = difficultyRank[a.difficulty] - difficultyRank[b.difficulty];
           break;
-        case 'languages': {
-          const languagesA = a.languages.map((item) => item.language).join(', ');
-          const languagesB = b.languages.map((item) => item.language).join(', ');
-          comparison = languagesA.localeCompare(languagesB);
-          break;
-        }
         case 'translations': {
           const translationsA = a.languages.map((item) => `${item.language}:${item.translatedName}`).join(' | ');
           const translationsB = b.languages.map((item) => `${item.language}:${item.translatedName}`).join(' | ');
@@ -296,15 +291,6 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
             <TableHead>
               <button
                 type="button"
-                onClick={() => toggleSort('languages')}
-                className="inline-flex items-center gap-1 font-medium"
-              >
-                Languages <span className="text-xs text-muted-foreground">{sortIndicator('languages')}</span>
-              </button>
-            </TableHead>
-            <TableHead>
-              <button
-                type="button"
                 onClick={() => toggleSort('translations')}
                 className="inline-flex items-center gap-1 font-medium"
               >
@@ -342,16 +328,9 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
                 </TableCell>
                 <TableCell>
                   <div className="flex flex-wrap gap-1.5">
-                    {game.languages.map((item) => (
-                      <Badge key={`${game.key}-${item.language}`} variant="secondary">
-                        {getLanguageFlag(item.language)} {item.language}
-                      </Badge>
-                    ))}
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex flex-wrap gap-1.5">
-                    {game.languages.map((item) => (
+                    {game.languages
+                      .filter((item) => languageFilter === 'ALL' || item.language === languageFilter)
+                      .map((item) => (
                       <Badge key={`${game.key}-${item.language}-translated`} variant="outline" className="max-w-xs">
                         <span className="truncate" title={`${item.language}: ${item.translatedName}`}>
                           {getLanguageFlag(item.language)} {item.language}: {item.translatedName}
