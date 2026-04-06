@@ -8,19 +8,21 @@ type GameTableProps = {
   imageByKey?: Record<string, string>;
 };
 
-type SortColumn = 'image' | 'germanName' | 'releaseYear' | 'difficulty' | 'languages' | 'translations';
+type SortColumn = 'image' | 'name' | 'releaseYear' | 'difficulty' | 'languages' | 'translations';
 type SortDirection = 'asc' | 'desc';
 
 const FLAG_BY_LANGUAGE: Record<string, string> = {
-  german: '🇩🇪',
+  dutch : '🇳🇱',
   english: '🇬🇧',
   french: '🇫🇷',
-  spanish: '🇪🇸',
+  german: '🇩🇪',
   italian: '🇮🇹',
+  lithuanian: '🇱🇹',
   portuguese: '🇵🇹',
-  japanese: '🇯🇵',
+  romanian: '🇷🇴',
   polish: '🇵🇱',
-  turkish: '🇹🇷',
+  spanish: '🇪🇸',
+  swedish: '🇸🇪',
 };
 
 function getLanguageFlag(language: string) {
@@ -69,7 +71,7 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
 
     return games.filter((game) => {
       if (normalizedNameFilter) {
-        const nameHaystack = `${game.germanName} ${game.key}`.toLowerCase();
+  const nameHaystack = `${game.name} ${game.key}`.toLowerCase();
         if (!nameHaystack.includes(normalizedNameFilter)) {
           return false;
         }
@@ -120,8 +122,8 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
           comparison = imageA - imageB;
           break;
         }
-        case 'germanName':
-          comparison = a.germanName.localeCompare(b.germanName);
+        case 'name':
+          comparison = a.name.localeCompare(b.name);
           break;
         case 'releaseYear': {
           const yearA = a.releaseYear;
@@ -156,7 +158,7 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
       }
 
       if (comparison === 0) {
-        comparison = a.germanName.localeCompare(b.germanName);
+  comparison = a.name.localeCompare(b.name);
       }
 
       return sortDirection === 'asc' ? comparison : -comparison;
@@ -185,7 +187,7 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
     <div className="space-y-4">
       <div className="grid grid-cols-1 gap-3 lg:grid-cols-5">
         <label>
-          <span className="mb-1 block text-xs font-medium uppercase tracking-wide text-muted-foreground">German name</span>
+          <span className="mb-1 block text-xs font-medium uppercase tracking-wide text-muted-foreground">Name</span>
           <input
             type="text"
             value={nameFilter}
@@ -267,10 +269,10 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
             <TableHead className="min-w-[16rem] w-[20rem]">
               <button
                 type="button"
-                onClick={() => toggleSort('germanName')}
+                onClick={() => toggleSort('name')}
                 className="inline-flex items-center gap-1 font-medium"
               >
-                German name <span className="text-xs text-muted-foreground">{sortIndicator('germanName')}</span>
+                Name <span className="text-xs text-muted-foreground">{sortIndicator('name')}</span>
               </button>
             </TableHead>
             <TableHead>
@@ -321,7 +323,7 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
                   {imageSrc ? (
                     <img
                       src={imageSrc}
-                      alt={game.germanName}
+                      alt={game.name}
                       className="h-14 w-14 rounded-md object-cover"
                       loading="lazy"
                     />
@@ -330,7 +332,7 @@ export function GameTable({ games, imageByKey = {} }: GameTableProps) {
                   )}
                 </TableCell>
                 <TableCell className="min-w-[16rem] w-[20rem] font-medium">
-                  <div>{game.germanName}</div>
+                  <div>{game.name}</div>
                 </TableCell>
                 <TableCell>{game.releaseYear ?? 'Unknown'}</TableCell>
                 <TableCell>

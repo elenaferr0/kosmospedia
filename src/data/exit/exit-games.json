@@ -1,2 +1,689 @@
 [
+  {
+    "key": "the-secret-of-the-premiere",
+    "name": "The Secret of the Premiere",
+    "releaseYear": 2016,
+    "difficulty": "UNKNOWN",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "The Secret of the Premiere"
+      },
+      {
+        "language": "Spanish",
+        "translatedName": "El Misterio del Estreno"
+      },
+      {
+        "language": "Romanian",
+        "translatedName": "Secretul Premierei"
+      }
+    ]
+  },
+  {
+    "key": "the-abandoned-cabin",
+    "name": "The Abandoned Cabin",
+    "releaseYear": 2016,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "The Abandoned Cabin" },
+      { "language": "German", "translatedName": "Die verlassene Hütte" },
+      { "language": "French", "translatedName": "La Cabane Abandonnée" },
+      { "language": "Spanish", "translatedName": "La Cabaña Abandonada" },
+      { "language": "Italian", "translatedName": "La Baita Abbandonata" },
+      { "language": "Dutch", "translatedName": "De Verlaten Hut" }
+    ]
+  },
+  {
+    "key": "the-pharaohs-tomb",
+    "name": "The Pharaoh's Tomb",
+    "releaseYear": 2016,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "The Pharaoh's Tomb" },
+      { "language": "German", "translatedName": "Die Grabkammer des Pharao" },
+      { "language": "French", "translatedName": "Le Tombeau du Pharaon" },
+      { "language": "Spanish", "translatedName": "La Tumba del Faraón" },
+      { "language": "Italian", "translatedName": "La Tomba del Faraone" },
+      { "language": "Dutch", "translatedName": "De Grafkamer van de Farao" }
+    ]
+  },
+  {
+    "key": "the-secret-lab",
+    "name": "The Secret Lab",
+    "releaseYear": 2016,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "The Secret Lab" },
+      { "language": "German", "translatedName": "Det Hemmelige Laboratorium" },
+      { "language": "French", "translatedName": "Le Laboratoire Secret" },
+      { "language": "Spanish", "translatedName": "El Laboratorio Secreto" },
+      { "language": "Italian", "translatedName": "Il Laboratorio Segreto" },
+      { "language": "Dutch", "translatedName": "Het Geheime Lab" }
+    ]
+  },
+  {
+    "key": "the-forgotten-island",
+    "name": "The Forgotten Island",
+    "releaseYear": 2017,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "The Forgotten Island" },
+      { "language": "German", "translatedName": "Die vergessene Insel" },
+      { "language": "French", "translatedName": "L'Île Oubliée" },
+      { "language": "Spanish", "translatedName": "La Isla Olvidada" },
+      { "language": "Italian", "translatedName": "L'Isola Dimenticata" },
+      { "language": "Dutch", "translatedName": "Het Vergeten Eiland" }
+    ]
+  },
+  {
+    "key": "the-forbidden-castle",
+    "name": "The Forbidden Castle",
+    "releaseYear": 2017,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "The Forbidden Castle" },
+      { "language": "Italian", "translatedName": "Il Castello Proibito" },
+      { "language": "German", "translatedName": "Die Verbotene Burg" },
+      { "language": "Spanish", "translatedName": "El Castillo Prohibido" },
+      { "language": "French", "translatedName": "Le Château Interdit" },
+      { "language": "Dutch", "translatedName": "Het Verboden Slot" }
+    ]
+  },
+  {
+    "key": "the-polar-station",
+    "name": "The Polar Station",
+    "releaseYear": 2017,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "The Polar Station" },
+      { "language": "German", "translatedName": "Die Station im ewigen Eis" },
+      { "language": "French", "translatedName": "La Station Polaire" },
+      { "language": "Spanish", "translatedName": "La Estación Polar" },
+      { "language": "Italian", "translatedName": "La Base nei Ghiacci Artici" },
+      { "language": "Dutch", "translatedName": "Evacuatie van de Noordpool" }
+    ]
+  },
+  {
+    "key": "dead-man-on-the-orient-express",
+    "name": "Dead Man on the Orient Express",
+    "releaseYear": 2018,
+    "difficulty": "MEDIUM",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "Dead Man on the Orient Express"
+      },
+      {
+        "language": "Italian",
+        "translatedName": "Omicidio sull'Orient Express"
+      },
+      {
+        "language": "German",
+        "translatedName": "Der Tote im Orient-Express"
+      },
+      {
+        "language": "French",
+        "translatedName": "Le Cadavre de l'Orient-Express"
+      },
+      {
+        "language": "Spanish",
+        "translatedName": "Muerte en el Orient Express"
+      },
+      {
+        "language": "Dutch",
+        "translatedName": "De Dode in de Orient-Express"
+      }
+    ]
+  },
+  {
+    "key": "the-sinister-mansion",
+    "name": "The Sinister Mansion",
+    "releaseYear": 2018,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "The Sinister Mansion" },
+      { "language": "French", "translatedName": "Le Manoir Sinistre" },
+      { "language": "Spanish", "translatedName": "La Mansión Siniestra" },
+      { "language": "Italian", "translatedName": "La Villa Inquietante" },
+      { "language": "Dutch", "translatedName": "De Onheilspellende Villa" },
+      { "language": "German", "translatedName": "Die unheimliche Villa" },
+      { "language": "Portuguese", "translatedName": "A Mansão Sinistra" }
+    ]
+  },
+  {
+    "key": "the-sunken-treasure",
+    "name": "The Sunken Treasure",
+    "releaseYear": 2018,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "The Sunken Treasure" },
+      { "language": "Italian", "translatedName": "Il Tesoro Sommerso" },
+      { "language": "German", "translatedName": "Der versunkene Schatz" },
+      { "language": "French", "translatedName": "Le Trésor Englouti" },
+      { "language": "Spanish", "translatedName": "El Tesoro Hundido" },
+      { "language": "Dutch", "translatedName": "De Verzonken Schat" }
+    ]
+  },
+  {
+    "key": "the-mysterious-museum",
+    "name": "The Mysterious Museum",
+    "releaseYear": 2018,
+    "difficulty": "EASY",
+    "languages": [
+      { "language": "English", "translatedName": "The Mysterious Museum" },
+      { "language": "French", "translatedName": "Le Musée Mystérieux" },
+      { "language": "Spanish", "translatedName": "El Museo Misterioso" },
+      { "language": "German", "translatedName": "Das mystike Museum" },
+      { "language": "Italian", "translatedName": "Il Museo Misterioso" },
+      { "language": "Dutch", "translatedName": "Het Mysterieuze Museum" }
+    ]
+  },
+  {
+    "key": "kids-code-breaker",
+    "name": "Kids: Code Breaker",
+    "releaseYear": 2018,
+    "difficulty": "EASY",
+    "languages": [
+      { "language": "German", "translatedName": "Kids: Code Breaker" }
+    ]
+  },
+  {
+    "key": "the-catacombs-of-horror",
+    "name": "The Catacombs of Horror",
+    "releaseYear": 2019,
+    "difficulty": "HARD",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "The Catacombs of Horror"
+      },
+      {
+        "language": "German",
+        "translatedName": "Die Katakomben des Grauens"
+      },
+      {
+        "language": "Italian",
+        "translatedName": "Le Catacombe della paura"
+      },
+      {
+        "language": "French",
+        "translatedName": "Les Catacombes de l'Effroi"
+      },
+      {
+        "language": "Spanish",
+        "translatedName": "Las Catacumbas del Terror"
+      },
+      {
+        "language": "Dutch",
+        "translatedName": "De Duistere Catacomben"
+      }
+    ]
+  },
+  {
+    "key": "the-haunted-roller-coaster",
+    "name": "The Haunted Roller Coaster",
+    "releaseYear": 2019,
+    "difficulty": "MEDIUM",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "The Haunted Roller Coaster"
+      },
+      {
+        "language": "Swedish",
+        "translatedName": "Spöktåget"
+      },
+      {
+        "language": "French",
+        "translatedName": "Le Parc de l'Horreur"
+      },
+      {
+        "language": "Spanish",
+        "translatedName": "La Feria Terrorífica"
+      },
+      {
+        "language": "Lithuanian",
+        "translatedName": "Siaubo Kambarys"
+      },
+      {
+        "language": "German",
+        "translatedName": "Die Geisterbahn des Schreckens"
+      },
+      {
+        "language": "Italian",
+        "translatedName": "Il Tunnel dell'Orrore"
+      },
+      {
+        "language": "Dutch",
+        "translatedName": "Het Verschrikkelijke Spookhuis"
+      }
+    ]
+  },
+  {
+    "key": "the-house-of-riddles",
+    "name": "The House of Riddles",
+    "releaseYear": 2019,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "The House of Riddles" },
+      { "language": "German", "translatedName": "Das Haus der Rätsel" },
+      { "language": "French", "translatedName": "La Maison des Énigmes" },
+      { "language": "Spanish", "translatedName": "La Casa de los Enigmas" },
+      { "language": "Italian", "translatedName": "La Casa dei Misteri" },
+      { "language": "Dutch", "translatedName": "Het Mysterieuze Huis" }
+    ]
+  },
+  {
+    "key": "die-kanguru-eskapaden",
+    "name": "Die Känguru-Eskapaden (German only)",
+    "releaseYear": 2019,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "German", "translatedName": "Die Känguru-Eskapaden" }
+    ]
+  },
+  {
+    "key": "theft-on-the-mississippi",
+    "name": "Theft on the Mississippi",
+    "releaseYear": 2020,
+    "difficulty": "MEDIUM",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "Theft on the Mississippi"
+      },
+      {
+        "language": "German",
+        "translatedName": "Der Raub auf dem Mississippi"
+      },
+      {
+        "language": "Italian",
+        "translatedName": "Furto sul Mississippi"
+      },
+      {
+        "language": "Spanish",
+        "translatedName": "Robo en el Misisipi"
+      },
+      {
+        "language": "Dutch",
+        "translatedName": "De Beroving op de Mississippi"
+      },
+      {
+        "language": "French",
+        "translatedName": "L'affaire du Mississippi"
+      },
+      {
+        "language": "Polish",
+        "translatedName": "Loupež na Mississippi"
+      }
+    ]
+  },
+  {
+    "key": "the-stormy-flight",
+    "name": "The Stormy Flight",
+    "releaseYear": 2020,
+    "difficulty": "EASY",
+    "languages": [
+      { "language": "English", "translatedName": "The Stormy Flight" },
+      { "language": "German", "translatedName": "Der Flug ins Ungewisse" },
+      { "language": "Spanish", "translatedName": "Vuelo hacia lo desconocido" },
+      { "language": "Italian", "translatedName": "In Volo verso l'ignoto" }
+    ]
+  },
+  {
+    "key": "the-cemetery-of-the-knight",
+    "name": "The Cemetery of the Knight",
+    "releaseYear": 2020,
+    "difficulty": "MEDIUM",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "The Cemetery of the Knight"
+      },
+      {
+        "language": "Polish",
+        "translatedName": "Temný Hřbitov"
+      },
+      {
+        "language": "German",
+        "translatedName": "Der Friedhof der Finsteren"
+      },
+      {
+        "language": "Italian",
+        "translatedName": "Il Cimitero del Cavaliere"
+      },
+      {
+        "language": "Spanish",
+        "translatedName": "El Cementerio de las Tinieblas"
+      },
+      {
+        "language": "French",
+        "translatedName": "Le Cimetière des Ombres"
+      },
+      {
+        "language": "Dutch",
+        "translatedName": "Het Kerkhof van de Duisternis"
+      }
+    ]
+  },
+  {
+    "key": "the-enchanted-forest",
+    "name": "The Enchanted Forest",
+    "releaseYear": 2020,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "The Enchanted Forest" },
+      { "language": "Dutch", "translatedName": "Het Betoverde Bos" },
+      { "language": "German", "translatedName": "Der verwunschene Wald" },
+      { "language": "French", "translatedName": "La Forêt Enchantée" },
+      { "language": "Spanish", "translatedName": "El Bosque Encantado" },
+      { "language": "Portuguese", "translatedName": "A Floresta Encantada" },
+      { "language": "Italian", "translatedName": "La Foresta Incantata" }
+    ]
+  },
+  {
+    "key": "the-gate-between-worlds",
+    "name": "The Gate Between Worlds",
+    "releaseYear": 2021,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "The Gate Between Worlds" },
+      { "language": "German", "translatedName": "Das Tor zwischen den Welten" },
+      { "language": "French", "translatedName": "Le Porte entre les Mondes" },
+      { "language": "Spanish", "translatedName": "La Puerta entre los Mundos" },
+      { "language": "Dutch", "translatedName": "De Poort tussen de Werelden" },
+      {
+        "language": "Portuguese",
+        "translatedName": "O Portal Entre os Mundos"
+      },
+      { "language": "Italian", "translatedName": "Il Portale tra Mondi" }
+    ]
+  },
+  {
+    "key": "the-cursed-labyrinth",
+    "name": "The Cursed Labyrinth",
+    "releaseYear": 2021,
+    "difficulty": "EASY",
+    "languages": [
+      { "language": "English", "translatedName": "The Cursed Labyrinth" },
+      { "language": "German", "translatedName": "Der verfluchte Labyrinth" },
+      { "language": "Spanish", "translatedName": "El Laberinto Maldito" },
+      { "language": "French", "translatedName": "Le Labyrinthe Maudit" },
+      { "language": "Italian", "translatedName": "Il Labirinto Maledetto" }
+    ]
+  },
+  {
+    "key": "kidnapped-in-fortune-city",
+    "name": "Kidnapped in Fortune City",
+    "releaseYear": 2021,
+    "difficulty": "MEDIUM",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "Kidnapped in Fortune City"
+      },
+      {
+        "language": "German",
+        "translatedName": "Die Entführung in Fortune City"
+      },
+      {
+        "language": "Italian",
+        "translatedName": "Rapimento a Fortune City"
+      },
+      {
+        "language": "Danish",
+        "translatedName": "Bortført i Fortune City"
+      },
+      {
+        "language": "Polish",
+        "translatedName": "Unos ve Fortune City"
+      },
+      {
+        "language": "Spanish",
+        "translatedName": "Secuestro en Fortune City"
+      },
+      {
+        "language": "Dutch",
+        "translatedName": "De Ontvoering in Fortune City"
+      }
+    ]
+  },
+  {
+    "key": "the-return-to-the-abandoned-cabin",
+    "name": "The Return to the Abandoned Cabin",
+    "releaseYear": 2022,
+    "difficulty": "MEDIUM",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "The Return to the Abandoned Cabin"
+      },
+      {
+        "language": "German",
+        "translatedName": "Die Rückkehr zur verlassenen Hütte"
+      },
+      {
+        "language": "French",
+        "translatedName": "Le Retour à la Cabane Abandonnée"
+      },
+      {
+        "language": "Spanish",
+        "translatedName": "Regreso a la Cabaña Abandonada"
+      },
+      {
+        "language": "Italian",
+        "translatedName": "Ritorno alla Baita Abbandonata"
+      },
+      {
+        "language": "Dutch",
+        "translatedName": "Terug naar de Verlaten Hut"
+      }
+    ]
+  },
+  {
+    "key": "lord-of-the-rings-shadows-over-middle-earth",
+    "name": "The Lord of the Rings - Shadows Over Middle-earth",
+    "releaseYear": 2022,
+    "difficulty": "HARD",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "Shadows Over Middle-earth"
+      },
+      {
+        "language": "German",
+        "translatedName": "Schatten über Mittelerde"
+      },
+      {
+        "language": "French",
+        "translatedName": "Périls en Terres du Milieu"
+      },
+      {
+        "language": "Spanish",
+        "translatedName": "Sombras Sobre la Tierra Media"
+      },
+      {
+        "language": "Italian",
+        "translatedName": "Ombre sulla Terra di Mezzo"
+      },
+      {
+        "language": "Dutch",
+        "translatedName": "Schaduwen over Midden-aarde"
+      },
+      {
+        "language": "Danish",
+        "translatedName": "Skygger over Midgård"
+      }
+    ]
+  },
+  {
+    "key": "the-professors-last-riddle",
+    "name": "The Professor's Last Riddle",
+    "releaseYear": 2023,
+    "difficulty": "MEDIUM",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "The Professor's Last Riddle"
+      },
+      {
+        "language": "French",
+        "translatedName": "L'Héritage du Voyageur"
+      },
+      {
+        "language": "Spanish",
+        "translatedName": "El Legado del Profesor"
+      },
+      {
+        "language": "Italian",
+        "translatedName": "L'Eredità del Professore"
+      }
+    ]
+  },
+  {
+    "key": "the-disappearance-of-sherlock-holmes",
+    "name": "The Disappearance of Sherlock Holmes",
+    "releaseYear": 2023,
+    "difficulty": "MEDIUM",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "The Disappearance of Sherlock Holmes"
+      },
+      {
+        "language": "German",
+        "translatedName": "Das Verschwinden von Sherlock Holmes"
+      },
+      {
+        "language": "French",
+        "translatedName": "La Disparition de Sherlock Holmes"
+      },
+      {
+        "language": "Spanish",
+        "translatedName": "La Desaparición de Sherlock Holmes"
+      },
+      {
+        "language": "Italian",
+        "translatedName": "La Scomparsa di Sherlock Holmes"
+      }
+    ]
+  },
+  {
+    "key": "kids-jungle-of-riddles",
+    "name": "Kids: Jungle of Riddles",
+    "releaseYear": 2023,
+    "difficulty": "EASY",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "Kids: Jungle of Riddles"
+      }
+    ]
+  },
+  {
+    "key": "the-magical-academy",
+    "name": "The Magical Academy",
+    "releaseYear": 2024,
+    "difficulty": "MEDIUM",
+    "languages": [
+      { "language": "English", "translatedName": "The Magical Academy" },
+      {
+        "language": "German",
+        "translatedName": "Die Akademie der Zauberkünste"
+      },
+      { "language": "French", "translatedName": "L'Académie de Magie" },
+      {
+        "language": "Spanish",
+        "translatedName": "La Academia de las Artes Mágicas"
+      },
+      { "language": "Italian", "translatedName": "L'Accademia di Arti Magiche" }
+    ]
+  },
+  {
+    "key": "the-hunt-through-amsterdam",
+    "name": "The Hunt Through Amsterdam",
+    "releaseYear": 2024,
+    "difficulty": "MEDIUM",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "The Hunt Through Amsterdam"
+      },
+      {
+        "language": "German",
+        "translatedName": "Die Jagd durch Amsterdam"
+      },
+      {
+        "language": "French",
+        "translatedName": "Course Poursuite à Amsterdam"
+      },
+      {
+        "language": "Dutch",
+        "translatedName": "De Jacht door Amsterdam"
+      }
+    ]
+  },
+  {
+    "key": "prison-break",
+    "name": "Prison Break",
+    "releaseYear": 2024,
+    "difficulty": "HARD",
+    "languages": [
+      { "language": "English", "translatedName": "Prison Break" },
+      {
+        "language": "German",
+        "translatedName": "Der Gefängnisausbruch"
+      },
+      { "language": "French", "translatedName": "L'évasion de Prison" },
+      { "language": "Spanish", "translatedName": "La Fuga" }
+    ]
+  },
+  {
+    "key": "kids-riddles-in-monsterville",
+    "name": "Kids: Riddles in Monsterville",
+    "releaseYear": 2024,
+    "difficulty": "EASY",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "Kids: Riddles in Monsterville"
+      }
+    ]
+  },
+  {
+    "key": "the-venice-conspiracy",
+    "name": "The Venice Conspiracy",
+    "releaseYear": 2024,
+    "difficulty": "HARD",
+    "languages": [
+      { "language": "English", "translatedName": "The Venice Conspiracy" },
+      { "language": "German", "translatedName": "Die Venedig-Verschwörung" },
+      { "language": "French", "translatedName": "Intrigue à Venise" },
+      { "language": "Spanish", "translatedName": "Conspiración en Venecia" }
+    ]
+  },
+  {
+    "key": "family-locked-castle-mission-candyland",
+    "name": "Family: Locked Castle / Mission Candyland (2 Adventures)",
+    "releaseYear": 2024,
+    "difficulty": "EASY",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "Family: Locked Castle / Mission Candyland (2 Adventures)"
+      }
+    ]
+  },
+  {
+    "key": "kids-creepy-puzzle-fun",
+    "name": "Kids: Creepy Puzzle Fun",
+    "releaseYear": 2024,
+    "difficulty": "EASY",
+    "languages": [
+      {
+        "language": "English",
+        "translatedName": "Kids: Creepy Puzzle Fun"
+      }
+    ]
+  }
 ]
